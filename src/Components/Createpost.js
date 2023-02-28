@@ -97,7 +97,7 @@ const Createpost = ({ open, Close }) => {
       "type":value.type
     }
 
-    Axios.post('http://localhost:3001/post/add',{id:24,author:authordata,categories:Category,content:Post,blogphoto:img1.selectedFile[0],title:title})
+    Axios.post('https://mernserver-8toi.onrender.com/post/add',{id:24,author:authordata,categories:Category,content:Post,blogphoto:img1.selectedFile[0],title:title})
     .then((res)=>{
       console.log(res,"response")
       Close()
@@ -109,7 +109,7 @@ const Createpost = ({ open, Close }) => {
     })
       }
       const Getname=()=>{
-        Axios.get('http://localhost:3001/read')
+        Axios.get('https://mernserver-8toi.onrender.com/read')
         .then((res)=>{
           console.log(res,"response")
           // setRowdata(res.data)

@@ -94,7 +94,7 @@ const Body = () => {
     setOpen1(false)
   }
   const Getname = () => {
-    Axios.get('http://localhost:3001/read')
+    Axios.get('https://mernserver-8toi.onrender.com/read')
       .then((res) => {
         console.log(res, "response")
         setBlogdata(res.data)
